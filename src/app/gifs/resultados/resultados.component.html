@@ -1,0 +1,17 @@
+<div class="row ">
+
+    <div *ngFor="let gif of resultados"
+    class="animate__animated animate__rubberBand"
+     style="width: 20rem; margin: 20px">
+        <div class="card">
+            <img [src]="gif.images.downsized_medium.url " class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{gif.title}}</h5>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
